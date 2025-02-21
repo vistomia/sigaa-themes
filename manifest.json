@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "SIGAA-Themes",
+    "version": "1.0",
+  
+    "description": "Adiciona temas ao SIGAA",
+  
+    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/main/beastify",
+
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+    "permissions": ["activeTab", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["https://si3.ufc.br/*"],
+        "css": ["dark-theme.css"],
+        "js": ["theme.js"]
+      }
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/beasts-32.png",
+        "default_title": "Beastify",
+        "default_popup": "popup/choose_theme.html"
+    }
+}

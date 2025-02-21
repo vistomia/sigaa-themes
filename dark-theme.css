@@ -1,0 +1,93 @@
+/*
+* Remove o Background do SIGAA
+*/
+
+html.background, body.background {
+    background: none;
+}
+
+/*
+* Remove o Não definido da tela de login
+*/
+
+
+/*
+* Remove o Background do Menu
+
+
+@media only screen and (min-width: 64em) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        height: 100vh;
+    }
+  }
+*/
+
+@media only screen and (min-width: 64em) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        height: 100vh;
+    }
+  }
+
+/*
+* Remove menu de acessibilidade invisivel
+*/
+
+#menu-acessibilidade {
+    display: none;
+}
+
+#forum-portal {
+    display: none;
+}
+
+#cabecalho {
+    margin: 0;
+}
+
+#painel-usuario {
+    padding: 0px 128px;
+}
+
+#info-sistema {
+    padding: 0px 128px;
+}
+
+.off {
+    display: none;
+}
+
+/*a*/
+
+tr.odd:nth-child(1) > td:nth-child(5) {
+    display: none;
+}
+
+div.simple-panel:nth-child(5) > table:nth-child(2) > tbody:nth-child(2) > tr:nth-child(3) > td:nth-child(5) {
+    display: none;
+}
+
+tr.odd:nth-child(5) > td:nth-child(5) {
+    display: none;
+}
+
+tr:nth-child(7) > td:nth-child(5) {
+    display: none;
+}
+
+tr.odd:nth-child(9) > td:nth-child(5) {
+    display: none;
+}
+
+div[vw].enabled {
+    display: none;
+}
