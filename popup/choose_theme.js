@@ -9,6 +9,7 @@ async function change_theme(x) {
 }
 
 claro.addEventListener('click', async () => {
+    browser.tabs.insertCSS({ file: "thema.css" })
     await change_theme('claro');
 });
 
