@@ -1,0 +1,50 @@
+:root {
+    --main-padding: 12%;
+    --accent-color: #fff;
+    --surface-color: #fff;
+    --primary-blue-color: #404E82;
+    --secundary-blue-color: #C4D2EB;
+    --primary-orange-color: #D99C44;
+    --secundary-orange-color: #EFF3FA;
+}
+
+/* Atenção desnecessária*/
+#conteudo > div:nth-child(3) {
+    display: none;
+}
+
+/* Portal da Avaliação*/
+#container > div:nth-child(7) > a:nth-child(1) {
+    display: none;
+}
+
+.logon h3 {
+    background: none;
+    background-color: var(--secundary-blue-color);
+}
+
+#conteudo > hr:nth-child(6) {
+    display: none;
+}
+
+div#info-sistema {
+    background: none;
+    background-color: var(--primary-blue-color);
+    border-bottom: 3px solid var(--primary-orange-color);
+}
+
+#painel-usuario {
+    background: var(--secundary-blue-color);
+}
+
+.logon table {
+    border: 1px solid var(--secundary-blue-color);
+}
+
+#rodape {
+    position: relative;
+    bottom: 0px;
+    border-top: 3px solid var(--primary-orange-color);
+    background: var(--primary-blue-color);
+    font-size: 0.9em;
+  }

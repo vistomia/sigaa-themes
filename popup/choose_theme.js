@@ -1,6 +1,5 @@
-const claro = document.getElementById('claro');
-const escuro = document.getElementById('escuro');
-const reset = document.getElementById('reset');
+const ligado = document.getElementById('ligado');
+const desligado = document.getElementById('desligado');
 
 async function change_theme(x) {
     browser.storage.local.set({ theme: x });
@@ -8,15 +7,10 @@ async function change_theme(x) {
     browser.tabs.executeScript({ file: '../theme.js' });
 }
 
-claro.addEventListener('click', async () => {
-    browser.tabs.insertCSS({ file: "thema.css" })
-    await change_theme('claro');
+ligado.addEventListener('click', async () => {
+    await change_theme('ligado');
 });
 
-escuro.addEventListener('click', async () => {
-    await change_theme('escuro');
-});
-
-reset.addEventListener('click', async () => {
-    await change_theme('escuro');
+desligado.addEventListener('click', async () => {
+    await change_theme('desligado');
 });

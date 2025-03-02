@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif !important;
+}
+
+html.background body#elgen-0 div#container main#conteudo table {
+    margin: auto !important;
+}
+
+:root {
+    --main-padding: 12% !important;
+    --accent-color: #fff !important;
+    --surface-color: #fff !important;
+    --primary-blue-color: #404E82 !important;
+    --secundary-blue-color: #C4D2EB !important;
+    --primary-orange-color: #D99C44 !important;
+    --secundary-orange-color: #EFF3FA !important;
+}
+
+/*
+* Remove o Background do SIGAA
+*/
+
+html.background, body.background {
+    background: none !important;
+}
+
+p.info-docente {
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+#menu_principal > div:nth-child(1) {
+    display: none !important;
+}
+
+#menu_principal {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#portais > h2:nth-child(1) {
+    display: none !important;
+}
+
+#portais > ul:nth-child(2) {
+    border: 0 !important;
+}
+
+#menu_principal #portais {
+    position: unset !important;
+}
+
+#conteudo > div:nth-child(4) {
+    width: 978px !important;
+    border-collapse: collapse !important;
+}
+
+/*
+* Remove o Não definido da tela de login
+*/
+
+/*
+* Remove o Background do Menu
+
+
+@media only screen and (min-width: 64em) {
+    #container {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        width: auto !important;
+        height: 100vh !important;
+    }
+  }
+*/
+
+
+@media only screen {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    #container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto 1fr !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        width: auto !important;
+        height: 100vh !important;
+    }
+}
+
+ /*
+* Remove menu de acessibilidade invisivel
+*/
+
+#menu-acessibilidade {
+    display: none !important;
+}
+
+#forum-portal {
+    display: none !important;
+}
+
+#cabecalho {
+    margin: 0 !important;
+}
+
+#painel-usuario {
+    padding: 0px var(--main-padding) !important;
+    min-height: 53px !important;
+}
+
+#menu-dropdown {
+    padding: 0px var(--main-padding) !important;
+}
+
+#portal-docente {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: center !important;
+    padding: 8px var(--main-padding) !important;
+    gap: 8px !important;
+}
+
+span.mais:nth-child(5) {
+    text-align: none !important;
+}
+
+#info-sistema {
+    padding: 0px var(--main-padding) !important;
+}
+
+.off {
+    display: none !important;
+}
+
+/*a*/
+
+tr.odd:nth-child(1) > td:nth-child(5) {
+    display: none !important;
+}
+
+div.simple-panel:nth-child(5) > table:nth-child(2) > tbody:nth-child(2) > tr:nth-child(3) > td:nth-child(5) {
+    display: none !important;
+}
+
+tr.odd:nth-child(5) > td:nth-child(5) {
+    display: none !important;
+}
+
+tr:nth-child(7) > td:nth-child(5) {
+    display: none !important;
+}
+
+tr.odd:nth-child(9) > td:nth-child(5) {
+    display: none !important;
+}
+
+div[vw].enabled {
+    display: none !important;
+}
+
+span.mais:nth-child(3) {
+    display: none !important;
+}
+
+#portais ul li {
+    width: 140px !important;
+}
+
+#main-docente .simple-panel {
+    border-radius: 6px !important;
+}
+
+#painel-usuario #menu-usuario li a {
+    border-radius: 4px !important;
+}
+
+#main-docente #noticias-portal {
+    border-radius: 6px !important;
+    height: 119px !important;
+}
+
+/* 
+*  Card Docente
+*/
+
+#perfil-docente {
+    height: fit-content !important;
+    border-radius: 6px !important;
+    margin-bottom: 14px !important;
+}
+
+#banner-biblioteca-digital {
+    display: none !important;
+}
+
+#perfil-docente > div:nth-child(6) {
+    display: none !important;
+}
+
+#perfil-docente .pessoal-docente {
+    height: 62px !important;
+    margin: 0 !important;
+    margin-bottom: 63px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
+    border-radius: 6px 6px 0px 0px !important;
+}
+
+#perfil-docente p.info-docente {
+    padding: 0 !important;
+}
+
+#perfil-docente #agenda-docente {
+    border-radius: 5px !important;
+    padding: 8px !important;
+}
+
+.foto {
+    position: relative !important;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 8px !important;
+    border: 4px solid #EFF3FA !important;
+    overflow: clip !important;
+}
+
+.perfil {
+    text-align: unset !important;
+    height: 10px !important;
+}
+
+#perfil-docente .pessoal-docente ul {
+    margin: 0 !important;
+    width: 0 !important;
+}
+
+#main-docente {
+    margin-right: 0px !important;
+}
