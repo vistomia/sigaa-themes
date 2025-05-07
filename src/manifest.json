@@ -1,0 +1,77 @@
+{
+    "manifest_version": 2,
+    "name": "SIGATEMAS",
+    "version": "1.1",
+  
+    "description": "Adiciona tema ao SIGAA",
+  
+    "homepage_url": "https://github.com/vistomia/sigaa-themes",
+
+    "icons": {
+      "48": "icons/icon-48.png"
+    },
+    "permissions": ["activeTab", "storage", "tabs"],
+    "content_scripts": [
+      {
+        "matches": ["https://si3.ufc.br/sigaa/*"],
+        "js": ["js/global.js"],
+        "css": ["css/global.css", "css/siga_base.css","css/sigaa.css"],
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://si3.ufc.br/sigaa/verTelaLogin.do*", "https://si3.ufc.br/sigaa/logar.do*"],
+        "css": ["css/verTelaLogin.css"],
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://si3.ufc.br/sigaa/verTelaLogin.do*", "https://si3.ufc.br/sigaa/logar.do*"],
+        "js": ["js/verTelaLogin.js"],
+        "run_at": "document_end"
+      },
+      {
+        "matches": ["https://si3.ufc.br/sigaa/telaAvisoLogon.jsf*"],
+        "js": ["js/telaAvisoLogon.js"],
+        "css": ["css/telaAvisoLogon.css"],
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://si3.ufc.br/sigaa/paginaInicial.do*"],
+        "css": ["css/paginaInicial.css"],
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://si3.ufc.br/sigaa/paginaInicial.do*"],
+        "js": ["js/paginaInicial.js"],
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://si3.ufc.br/sigaa/portais/discente/discente.jsf*"],
+        "css": ["css/discente.css"],
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["https://si3.ufc.br/sigaa/portais/discente/discente.jsf*"],
+        "js": ["js/discente.js"],
+        "run_at": "document_end"
+      }
+    ],
+
+    "web_accessible_resources": [
+      "css/theme.css",
+      "css/verTelaLogin.css",
+      "css/telaAvisoLogon.css",
+      "css/discente.css"
+    ],
+
+    "browser_action": {
+      "default_icon": "icons/icon-48.png",
+      "default_title": "SIGATEMAS",
+      "default_popup": "popup/choose_theme.html"
+    },
+
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "sigaa-themes@vistomia"
+      }
+    }
+}

@@ -1,0 +1,54 @@
+:root {
+    --secondary-orange: #EFF3FA;
+}
+
+#portal-docente .mais {
+    border-top:1px solid #CFDCEF;
+}
+#portal-docente .pergunta {
+    border-bottom:1px dashed grey;
+}
+#perfil-docente {
+    background:#CFDCEF;
+}
+
+#perfil-docente .pessoal-docente {
+    background:var(--secondary-orange);
+}
+#perfil-docente #agenda-docente {
+    background:var(--secondary-orange);
+}
+
+#perfil-docente #agenda-docente h4 {
+    color:#555;
+}
+#perfil-docente #agenda-docente h5 {
+    border-bottom:1px solid #333;
+    color:#555;
+}
+#perfil-docente #agenda-docente td {
+    color:#444;
+}
+#main-docente thead th {
+    background:var(--secondary-orange);
+    border-bottom:1px solid #CFDCEF;
+}
+#main-docente tr.odd {
+    background:#E6ECF7;
+}
+#main-docente #noticias-portal {
+    background:#FFFCF5;
+    color:#433F0F;
+}
+#main-docente .simple-panel {
+    background:var(--secondary-orange);
+}
+#main-docente .simple-panel h4 {
+    color:#333;
+}
+.situacaoTurma {
+    color:#222;
+}
+table tr.nivel td {
+    background:#C8D5EC;
+}

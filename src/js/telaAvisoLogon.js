@@ -1,0 +1,1 @@
+document.querySelector("input:nth-child(1)").innerText = "Continuar";
