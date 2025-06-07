@@ -1,0 +1,43 @@
+:root {
+    --main-padding: 12%;
+    --accent-color: #fff;
+    --surface-color: #fff;
+    --primary-blue-color: #404E82;
+    --secundary-blue-color: #C4D2EB;
+    --primary-orange-color: #D99C44;
+    --secundary-orange-color: #EFF3FA;
+}
+
+#main-docente {
+    margin-right: 0px !important;
+}
+
+#perfil-docente .pessoal-docente {
+    height: 62px !important;
+    margin: 0 !important;
+    margin-bottom: 63px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
+    border-radius: 6px 6px 0px 0px !important;
+}
+
+#painel-usuario #menu-usuario {
+    background-color: transparent !important;
+}
+
+.ThemeOfficeMenu {
+    background-color: transparent !important;
+}
+
+.foto:hover {
+    cursor: pointer;
+}
+
+#j_id_jsp_440181972_143\:meusDadosPessoais {
+    display: none;
+}
+
+#conteudo {
+    margin: auto;
+}

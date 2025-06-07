@@ -1,0 +1,147 @@
+:root {
+    /* Cores principais */
+    --primary-blue: #6593CF;
+    --secondary-blue: #C4D2EB;
+    --dark-blue: #3b63ad;
+    --light-blue: #849ece;
+    --gradient-blue: linear-gradient(to bottom, var(--light-blue) 0%, var(--dark-blue) 65%);
+    --hover-blue: #315290;
+
+    /* Cores de fundo */
+    --menu-dropdown-bg: #F9FBFD;
+    --background-white: #FFF;
+    --background-gray: #DDD;
+    --background-light-gray: #EDF1F8;
+    --background-lighter-gray: #F9FBFD;
+    --background-dark-gray: #848484;
+    --background-light-dark-gray: #bdbdbd;
+    --background-gradient-gray: linear-gradient(to bottom, var(--background-light-dark-gray) 0%, var(--background-dark-gray) 65%);
+
+    /* Cores de texto */
+    --text-dark: #333;
+    --text-light: #EEE;
+    --text-gray: #888;
+    --text-disabled: rgba(161, 161, 161, 1);
+    --text-highlight: #999;
+
+    /* Cores de borda */
+    --border-blue: #6593CF;
+    --border-light-blue: #C4D2EB;
+    --border-dark: #333;
+    --border-gray: #555;
+    --border-light-gray: #DDD;
+    --border-dark-gray: #404E82;
+
+    /* Cores de destaque */
+    --highlight-green: #292;
+    --highlight-blue: #003395;
+}
+
+/* Substituições de cores no CSS */
+
+#menu_principal.popup {
+    background: var(--background-white);
+    border: 1px solid var(--border-blue);
+}
+
+#menu_principal ul {
+    border: 1px solid var(--border-light-blue);
+}
+
+#menu_principal ul li {
+    background-color: var(--secondary-blue);
+}
+
+#menu_principal .texto {
+    background: var(--dark-blue);
+    background: var(--gradient-blue);
+}
+
+#menu_principal li a:hover .texto,
+#menu_principal li a:focus .texto {
+    background: var(--hover-blue);
+}
+
+#menu_principal li.off .texto {
+    background: var(--background-dark-gray);
+    background: var(--background-gradient-gray);
+}
+
+#menu_principal ul li:not(.on) {
+    background-color: var(--background-gray);
+    color: var(--text-light);
+}
+
+#botoes {
+    background: var(--secondary-blue);
+    border: 1px solid var(--border-blue);
+}
+
+table.listagem tr.periodo td {
+    background: var(--secondary-blue);
+}
+
+table.listagem tr.componente_curricular td {
+    background: var(--background-gray);
+    border-bottom: 1px solid var(--border-gray);
+}
+
+table.listagem tr.disciplina {
+    border-bottom: 1px solid var(--border-dark-gray);
+}
+
+table.listagem tr.disciplina td {
+    background: var(--background-light-gray);
+}
+
+.linhaPar {
+    background-color: var(--background-lighter-gray);
+}
+
+.linhaImpar {
+    background-color: var(--background-light-gray);
+}
+
+td.botoes,
+div.botoes {
+    background: url(../../../../img/menu_matricula/bg_botao2.gif) no-repeat 2px 0px;
+    color: var(--highlight-green);
+}
+
+td.nao_salvar {
+    color: var(--text-gray);
+    background: url(../../../../img/menu_matricula/bg_botao3.gif) no-repeat 2px 0px;
+}
+
+table.menuMatricula td.operacao a {
+    color: var(--text-dark);
+}
+
+table.menuMatricula td.operacao a:hover {
+    color: var(--highlight-blue);
+}
+
+table.menuMatricula td.operacaoGrande a {
+    color: var(--text-dark);
+}
+
+table.menuMatricula td.operacaoGrande a:hover {
+    color: var(--highlight-blue);
+}
+
+span.destaque {
+    color: var(--text-highlight);
+}
+
+tr.periodo td {
+    background: var(--secondary-blue);
+}
+
+tr.disciplina td {
+    background: var(--background-light-gray);
+    border-bottom: 1px solid var(--border-light-gray);
+}
+
+.disabled {
+    color: var(--text-disabled);
+}
