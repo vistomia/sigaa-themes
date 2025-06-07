@@ -40,6 +40,7 @@ document.querySelector(".sair-sistema").addEventListener('click', function() {
     localStorage.setItem("rememberPassword", false);
 })
 
+docente.appendChild(addLink('Moodle UFC', 'https://moodle2.quixada.ufc.br/login/index.php'));
 docente.appendChild(addLink('Calendário Universitário', 'http://www.ufc.br/alunos-2/calendario-universitario-alunos'))
 docente.appendChild(addLink('Inserir Créditos no RU', 'https://si3.ufc.br/public//jsp/restaurante_universitario/consulta_comensal_ru.jsf'));
 docente.appendChild(addLink('Cardápio RU', 'https://www.ufc.br/restaurante/cardapio/5-restaurante-universitario-de-quixada/2025-03-12'));
