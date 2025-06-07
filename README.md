@@ -1,6 +1,6 @@
 <div align="center"> <a href="https://sigatemas.netlify.app/">
     <img
-      src="https://github.com/vistomia/sigaa-themes/blob/HEADER.png"
+      src="https://github.com/vistomia/sigaa-themes/blob/main/docs/images/HEADER.png"
       width="650"
       height="auto"
     />
